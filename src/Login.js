@@ -12,7 +12,7 @@ function Login() {
     event.preventDefault(); // Stops the default refresh functionality of login button!!!
     auth
       .signInWithEmailAndPassword(email, password)
-      .then((auth) => {
+      .then((auth) => { 
         history.push("/");
       })
       .catch((error) => alert(error));
